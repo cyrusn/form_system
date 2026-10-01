@@ -1,0 +1,32 @@
+/* Custom enhancements over Bulma */
+html, body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.signature-canvas {
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  cursor: crosshair;
+  display: block;
+  touch-action: none; /* Prevents scrolling while signing on mobile */
+}
+
+.signature-canvas:hover {
+  border-color: #3273dc;
+}
+
+/* Print utility styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background-color: #ffffff;
+  }
+  .card {
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
